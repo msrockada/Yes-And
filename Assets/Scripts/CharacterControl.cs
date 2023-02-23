@@ -11,18 +11,19 @@ public class CharacterControl : MonoBehaviour
     public GameObject DialogueBox;
     public Animator animator; 
     public Animator Danimator;
+    private DialogueTrigger currentFocus;
     
    
 
     public float speed = 6f;
-    bool facingRight = true;
-    bool TriggerSpace = false;
+   
 
     // Start is called before the first frame update
     void Start()
     {
         
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -34,17 +35,15 @@ public class CharacterControl : MonoBehaviour
 
         if(direction.magnitude >= 0.1f)
         {
-            
+            float targetAngle = Mathf.Atan2(direction.x*(-1), direction.z*(-1)) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
             controller.Move(direction * speed * Time.deltaTime);
 
         }
 
-        if ( horizontal > 0 && !facingRight || horizontal <0 && facingRight)
-        {
-            Flip();
-        }
 
-        animator.SetFloat("Speed", Mathf.Abs(horizontal));
+        animator.SetFloat("Speed", Mathf.Abs(horizontal + vertical));
+    
         
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -57,9 +56,9 @@ public class CharacterControl : MonoBehaviour
             Walk();
         }
 
-        if (Input.GetKeyDown(KeyCode.K) && TriggerSpace == true)
+        if (Input.GetKeyDown(KeyCode.K) && currentFocus!= null)
         {
-             FindObjectOfType<DialogueTrigger>().TriggerDialogue();
+             currentFocus.TriggerDialogue();
              triggeron.SetActive(false);
              DialogueBox.SetActive(true);
              FindObjectOfType<CharacterControl>().enabled = false;
@@ -69,12 +68,6 @@ public class CharacterControl : MonoBehaviour
 
     }
 
-    void Flip()
-    {
-        reference.transform.Rotate(0,180,0);
-
-        facingRight = !facingRight;
-    }
 
     void Run()
     {
@@ -90,16 +83,16 @@ public class CharacterControl : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         triggeron.SetActive(true);
-        TriggerSpace = true;
-        FindObjectOfType<DialogueTrigger>().enabled = true;
+        currentFocus = other.GetComponent<DialogueTrigger>();
+
         
     }
 
     void OnTriggerExit(Collider other)
     {
         triggeron.SetActive(false);
-        TriggerSpace = false;
-        FindObjectOfType<DialogueTrigger>().enabled = false;
+        currentFocus = null;
+
     }
 
 }

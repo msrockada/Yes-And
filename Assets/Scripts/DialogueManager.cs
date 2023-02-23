@@ -8,9 +8,16 @@ public class DialogueManager : MonoBehaviour
 
     public Text nameText;
     public Text dialogueText;
-   
+    public Text ItemList;
+    public Animator Portrait;
+    
+   private int animationnumber;
+   private int itemcount = 0;
+   private bool canpickup;
+   private string newitem;
 
     private Queue<string> sentences;
+    private Queue<string> items;
 
     
 
@@ -27,14 +34,14 @@ public class DialogueManager : MonoBehaviour
         {
             DisplayNextSentence();
         }
+        Portrait.SetInteger("Emotion",animationnumber);
 
     }
 
     public void StartDialogue (Dialogue dialogue)
     {
-        Debug.Log ("This is"+ dialogue.log);
         sentences.Clear();
-        
+        animationnumber = dialogue.emotion;
         nameText.text = dialogue.name;
 
         
@@ -45,6 +52,15 @@ public class DialogueManager : MonoBehaviour
         }
 
         DisplayNextSentence();
+
+        if (dialogue.interactable == true)
+        {
+            newitem = dialogue.itemname;
+            dialogue.interactable = false;
+            itemcount += 1;
+            sentences.Enqueue("[You've got " + newitem + "]");
+        }
+
     }
 
     public void DisplayNextSentence ()
@@ -71,12 +87,29 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    void AddItem()
+    {
+        if ( newitem != null  && itemcount <= 1)
+        {
+            ItemList.text = "*" + newitem;
+        }
+
+        else if ( newitem!=null && itemcount > 1)
+        {
+            ItemList.text = ItemList.text + "\n*" + newitem;
+        }
+            
+    }
+
     void EndDialogue()
     {
         
         FindObjectOfType<CharacterControl>().enabled = true;
-        FindObjectOfType<TriggerManager>().enabled = true;
-        FindObjectOfType<TriggerManager>().DialogueBox.SetActive(false);
+        FindObjectOfType<CharacterControl>().DialogueBox.SetActive(false);
+        AddItem();
+        newitem = null;
+        
+        
 
     }
 }
