@@ -8,9 +8,11 @@ public class CharacterControl : MonoBehaviour
     public CharacterController controller;
     public GameObject reference;
     public GameObject triggeron;
+    public GameObject triggeron2;
     public GameObject DialogueBox;
     public Animator animator; 
     public Animator Danimator;
+    public AudioSource Step;
     private DialogueTrigger currentFocus;
     
    
@@ -30,6 +32,7 @@ public class CharacterControl : MonoBehaviour
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical= Input.GetAxisRaw("Vertical");
+        float walkingspeed = Mathf.Abs(horizontal + vertical);
         Vector3 direction = new Vector3(horizontal,0f,vertical);
         
 
@@ -38,11 +41,12 @@ public class CharacterControl : MonoBehaviour
             float targetAngle = Mathf.Atan2(direction.x*(-1), direction.z*(-1)) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
             controller.Move(direction * speed * Time.deltaTime);
+            
 
         }
-
-
-        animator.SetFloat("Speed", Mathf.Abs(horizontal + vertical));
+       
+        animator.SetFloat("Speed", walkingspeed);
+       
     
         
 
@@ -60,6 +64,7 @@ public class CharacterControl : MonoBehaviour
         {
              currentFocus.TriggerDialogue();
              triggeron.SetActive(false);
+             triggeron2.SetActive(false);
              DialogueBox.SetActive(true);
              FindObjectOfType<CharacterControl>().enabled = false;
              Danimator.SetBool("IsOpen",true);
@@ -78,11 +83,13 @@ public class CharacterControl : MonoBehaviour
     {
         speed = speed/3;
         animator.SetBool("Run",false);
+        
     }
 
     void OnTriggerEnter(Collider other)
     {
         triggeron.SetActive(true);
+        triggeron2.SetActive(true);
         currentFocus = other.GetComponent<DialogueTrigger>();
 
         
@@ -91,6 +98,7 @@ public class CharacterControl : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         triggeron.SetActive(false);
+        triggeron2.SetActive(false);
         currentFocus = null;
 
     }
