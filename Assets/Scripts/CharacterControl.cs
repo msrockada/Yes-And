@@ -18,6 +18,7 @@ public class CharacterControl : MonoBehaviour
    
 
     public float speed = 6f;
+    
    
 
     // Start is called before the first frame update
@@ -30,10 +31,13 @@ public class CharacterControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+         
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical= Input.GetAxisRaw("Vertical");
         float walkingspeed = Mathf.Abs(horizontal + vertical);
         Vector3 direction = new Vector3(horizontal,0f,vertical);
+    
         
 
         if(direction.magnitude >= 0.1f)
@@ -70,6 +74,20 @@ public class CharacterControl : MonoBehaviour
              Danimator.SetBool("IsOpen",true);
              
         }
+
+        if (Input.GetButton("Vertical") || Input.GetButton("Horizontal"))
+ {
+     if (!Step.isPlaying)
+     {
+         Step.Play();
+     }
+ }
+ else
+ {
+     // Always stop the audio if the player is not inputting movement.
+     Step.Stop();
+ }
+        
 
     }
 

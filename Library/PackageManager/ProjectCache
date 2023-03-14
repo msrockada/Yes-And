@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638122194377243328
-    m_Hash: 2944814232
+      ticks: 638134212728438539
+    m_Hash: 2222801838
   m_LockFileStatus:
     m_FilePath: C:/Users/Adel Zhanabay/YESAND/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638122194377383136
-    m_Hash: 3466977851
+      ticks: 638134212728438539
+    m_Hash: 2087607190
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:

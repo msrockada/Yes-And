@@ -13,12 +13,15 @@ public class PhoneGame : MonoBehaviour
     public string keynumber;
     public Collider trigger1;
     public Collider trigger2;
+    public GameObject ring;
 
     public DialogueTrigger Hint; //The Collider we use to give a hint
     public AudioSource PhoneRing;
     public Animator RingAnimation;
 
     private bool HadWon = false;
+    
+    private bool INSIDE;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +33,7 @@ public class PhoneGame : MonoBehaviour
     void Update()
     {
         NumberDialed.text = "";
-
+        INSIDE = FindObjectOfType<CheckTrigger>().Intrigger;
         
         foreach ( string item in pnumber)
         {
@@ -43,15 +46,15 @@ public class PhoneGame : MonoBehaviour
             GameUI.SetActive(false);
             FindObjectOfType<Pause>().enabled = true;
 
-            if(HadWon == false)
+            if(HadWon == false && INSIDE == true)
             {
                 Hint.TriggerDialogue();
             }
+
+
             else{
 
-                FindObjectOfType<PhaseControl>().PhaseNumber = 5;
                 FindObjectOfType<CharacterControl>().enabled = true;
-
             }
             
         }
@@ -80,11 +83,15 @@ public class PhoneGame : MonoBehaviour
     void Win()
     {
         NumberDialed.text = "Correct! - Press ESC to close";
-        FindObjectOfType<PhaseControl>().PhaseNumber = 5;
         trigger1.enabled = false;
         HadWon = true;
         PhoneRing.Play();
         RingAnimation.SetBool("Ringing", true);
+        ring.SetActive(true);
+
+        
         
     }
+
+
 }

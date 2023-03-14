@@ -20,7 +20,7 @@ public class DialogueManager : MonoBehaviour
 
 
    private int animationnumber;
-   private int linecount;
+   public int linecount;
    private int itemcount = 0;
    private bool minigame;
    private GameObject miniUI; 
@@ -45,8 +45,6 @@ public class DialogueManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K))
         {
             DisplayNextSentence();
-            
-            Debug.Log(linecount);
 
         }
         if(Scene == "main")
@@ -66,20 +64,23 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue)
     {
-
-
+        if (Scene == "main")
+        {
         FindObjectOfType<CharacterControl>().DialogueBox.SetActive(true);
         FindObjectOfType<CharacterControl>().enabled = false;
+        FindObjectOfType<Pause>().enabled = false;
+        }
 
         sentences.Clear();
         linecount = -1;
         animationnumber = dialogue.emotion;
         cutnumber = dialogue.cutsceneno;
-        minigame = dialogue.game;
-        miniUI = dialogue.gameUI;
+        
 
         if(Scene == "main"){
             nameText.text = dialogue.name;
+            minigame = dialogue.game;
+            miniUI = dialogue.gameUI;
         }
         
 
@@ -158,6 +159,7 @@ public class DialogueManager : MonoBehaviour
             else
             {
                 FindObjectOfType<CharacterControl>().enabled = true;
+                FindObjectOfType<Pause>().enabled = true;
                 FindObjectOfType<CharacterControl>().DialogueBox.SetActive(false);
                 AddItem();
                 

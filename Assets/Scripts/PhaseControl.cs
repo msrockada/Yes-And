@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PhaseControl : MonoBehaviour
 {
 
     //PHASE 1 TRIGGERS
+    public Text PhaseTip;
     public Collider DOOR1; //Tells us that we don't have the keys (MOVES to PHASE2)
     public Collider BATHSHELF1;//The Bathshelf is stuck
     public Collider DRAWER1;//Generic
@@ -21,11 +23,15 @@ public class PhaseControl : MonoBehaviour
     public Collider BATHSHELF3;//Stuck + I need something.. (OPEN = PHASE4)
     public Collider POLISH3; //Generic + Item Interactable
     //PHASE 4 TRIGGERS
-    public Collider PHONE4;//ADD beginning hint
+    public Collider BATHSHELF4;
+    public Collider PHONE5;//ADD beginning hint
 
+
+    public Collider PHONE6;
     
     
     public int PhaseNumber;
+    
 //---------------------------------------------------------------------------
     
     void Start()
@@ -52,6 +58,11 @@ public class PhaseControl : MonoBehaviour
         {
             PHASE5();
         }
+
+        if ( PhaseNumber == 6)
+        {
+            PHASE6();
+        }
     }
 
 //---------------------------------------------------------------
@@ -62,6 +73,8 @@ public class PhaseControl : MonoBehaviour
 
         DOOR2.enabled = true;
         DRAWER2.enabled = true;
+
+        PhaseTip.text = " * If I recall correctly... I usually keep my keys in the BEDROOM dresser.";
     }
 
     void PHASE3()
@@ -79,13 +92,29 @@ public class PhaseControl : MonoBehaviour
 
     void PHASE4()
     {
-        
+        BATHSHELF3.enabled = false;
+        POLISH3.enabled = false;
+
+        BATHSHELF4.enabled = true;
     }
 
     void PHASE5() //finale
     {
-        
+        BATHSHELF4.enabled = false;
+        PHONE5.enabled = true;
+        PHONE3.enabled = false;
     }
 
+    void PHASE6() //finale
+    {
+        PHONE6.enabled = true;
+        PHONE5.enabled = false;
+    }
+
+    //button function
+    public void Changer(int INTO)
+    {
+        PhaseNumber = INTO;
+    }
     
 }
