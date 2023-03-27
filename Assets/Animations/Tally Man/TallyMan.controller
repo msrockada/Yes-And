@@ -10,7 +10,11 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Speed
+<<<<<<< HEAD
     m_EventTreshold: 0.01
+=======
+    m_EventTreshold: 0
+>>>>>>> df39ae9 (Added Interaction Outlines)
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4677935328507042471}
   m_Solo: 0

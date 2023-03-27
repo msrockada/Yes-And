@@ -218,7 +218,10 @@ GameObject:
   - component: {fileID: 152153689}
   - component: {fileID: 152153688}
   - component: {fileID: 152153687}
+<<<<<<< HEAD
   - component: {fileID: 152153692}
+=======
+>>>>>>> df39ae9 (Added Interaction Outlines)
   - component: {fileID: 152153691}
   - component: {fileID: 152153693}
   m_Layer: 5
@@ -277,8 +280,13 @@ Canvas:
   m_GameObject: {fileID: 152153686}
   m_Enabled: 1
   serializedVersion: 3
+<<<<<<< HEAD
   m_RenderMode: 0
   m_Camera: {fileID: 0}
+=======
+  m_RenderMode: 1
+  m_Camera: {fileID: 12551514}
+>>>>>>> df39ae9 (Added Interaction Outlines)
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -300,8 +308,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+<<<<<<< HEAD
   - {fileID: 298905658}
   - {fileID: 1598129416}
+=======
+  - {fileID: 1598129416}
+  - {fileID: 298905658}
+>>>>>>> df39ae9 (Added Interaction Outlines)
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -361,6 +374,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!95 &152153692
 Animator:
   serializedVersion: 3
@@ -380,6 +394,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+=======
+>>>>>>> df39ae9 (Added Interaction Outlines)
 --- !u!114 &152153693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,10 +460,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
+<<<<<<< HEAD
     m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
+=======
+    m_Mode: 4
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 173124442}
+    m_SelectOnDown: {fileID: 173124442}
+>>>>>>> df39ae9 (Added Interaction Outlines)
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -577,10 +600,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
+<<<<<<< HEAD
     m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
+=======
+    m_Mode: 4
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 161604506}
+    m_SelectOnDown: {fileID: 161604506}
+>>>>>>> df39ae9 (Added Interaction Outlines)
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -833,11 +863,19 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 298905655}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -417.8309, y: -134.3906, z: 708}
   m_LocalScale: {x: 250.56845, y: 226.17438, z: 0.90292}
   m_Children: []
   m_Father: {fileID: 152153690}
   m_RootOrder: 0
+=======
+  m_LocalPosition: {x: 4, y: -25, z: 226}
+  m_LocalScale: {x: 258.10434, y: 260.44458, z: 0.68392175}
+  m_Children: []
+  m_Father: {fileID: 152153690}
+  m_RootOrder: 1
+>>>>>>> df39ae9 (Added Interaction Outlines)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &488040266
 GameObject:
@@ -873,7 +911,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 25.1, y: -0.800001}
+=======
+  m_AnchoredPosition: {x: 25.099998, y: -0.80000114}
+>>>>>>> df39ae9 (Added Interaction Outlines)
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &488040268
@@ -1246,7 +1288,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 25.1, y: -0.800001}
+=======
+  m_AnchoredPosition: {x: 25.099998, y: -0.80000114}
+>>>>>>> df39ae9 (Added Interaction Outlines)
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1145110620
@@ -1517,18 +1563,30 @@ RectTransform:
   m_GameObject: {fileID: 1598129415}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   m_LocalScale: {x: 1, y: 1, z: 1}
+=======
+  m_LocalScale: {x: 1.26, y: 1.26, z: 1.26}
+>>>>>>> df39ae9 (Added Interaction Outlines)
   m_Children:
   - {fileID: 264270089}
   - {fileID: 1301248335}
   - {fileID: 1400936732}
   - {fileID: 547413984}
   m_Father: {fileID: 152153690}
+<<<<<<< HEAD
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
+=======
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -250, y: -58}
+>>>>>>> df39ae9 (Added Interaction Outlines)
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1653922708
@@ -1659,7 +1717,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_FirstSelected: {fileID: 0}
+=======
+  m_FirstSelected: {fileID: 161604504}
+>>>>>>> df39ae9 (Added Interaction Outlines)
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1667433397

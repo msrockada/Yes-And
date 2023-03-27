@@ -69,7 +69,11 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _FresnelBrightness: 0
+<<<<<<< HEAD
     - _FresnelPower: 0
+=======
+    - _FresnelPower: 0.158
+>>>>>>> df39ae9 (Added Interaction Outlines)
     - _FresnelShadowDropoff: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5

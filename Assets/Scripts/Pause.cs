@@ -22,6 +22,10 @@ public class Pause : MonoBehaviour
         {
              MenuUI.SetActive(true);
              FindObjectOfType<CharacterControl>().enabled = false;
+<<<<<<< HEAD
+=======
+             FindObjectOfType<CharacterControl>().animator.SetFloat("Speed", 0);
+>>>>>>> df39ae9 (Added Interaction Outlines)
              MenuOn = true;
              
         }

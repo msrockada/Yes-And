@@ -88,6 +88,11 @@ public class PhaseControl : MonoBehaviour
         BOOK.enabled = true;
         BATHSHELF3.enabled = true;
         POLISH3.enabled = true;
+<<<<<<< HEAD
+=======
+
+        PhaseTip.text = " * Seems I've lost my keys. I need to call the landlord for a spare. I keep a number of contacts somewhere around the house...";
+>>>>>>> df39ae9 (Added Interaction Outlines)
     }
 
     void PHASE4()

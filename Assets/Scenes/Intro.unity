@@ -482,7 +482,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
+<<<<<<< HEAD
   m_audioClip: {fileID: 8300000, guid: 4d9d3716dc7eb4444b3d3da0cfb4153b, type: 3}
+=======
+  m_audioClip: {fileID: 8300000, guid: a24e41cafc964c34e9afcf408a923104, type: 3}
+>>>>>>> df39ae9 (Added Interaction Outlines)
   m_PlayOnAwake: 1
   m_Volume: 0.271
   m_Pitch: 1
@@ -680,13 +684,21 @@ GameObject:
   - component: {fileID: 807124141}
   - component: {fileID: 807124140}
   - component: {fileID: 807124139}
+<<<<<<< HEAD
+=======
+  - component: {fileID: 807124142}
+>>>>>>> df39ae9 (Added Interaction Outlines)
   m_Layer: 5
   m_Name: Meow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
   m_IsActive: 0
+=======
+  m_IsActive: 1
+>>>>>>> df39ae9 (Added Interaction Outlines)
 --- !u!114 &807124139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -700,14 +712,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+<<<<<<< HEAD
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+=======
+  m_Color: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
+>>>>>>> df39ae9 (Added Interaction Outlines)
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
   m_Sprite: {fileID: 0}
+=======
+  m_Sprite: {fileID: 21300000, guid: 4d26e20ddee189b48ab09c125e02441d, type: 3}
+>>>>>>> df39ae9 (Added Interaction Outlines)
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -734,7 +754,11 @@ RectTransform:
   m_GameObject: {fileID: 807124138}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   m_LocalScale: {x: 8.233159, y: 3.9631655, z: 3.6055}
+=======
+  m_LocalScale: {x: 8.233159, y: 4.462128, z: 3.6055}
+>>>>>>> df39ae9 (Added Interaction Outlines)
   m_Children: []
   m_Father: {fileID: 556340557}
   m_RootOrder: 0
@@ -744,6 +768,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+=======
+--- !u!95 &807124142
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807124138}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5f1aac800d7ee9945993fba163d21536, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+>>>>>>> df39ae9 (Added Interaction Outlines)
 --- !u!1 &1263057817
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,8 +882,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2846f4477bf6be4683868444334513e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   CutScene: {fileID: 0}
   PhoneSound: {fileID: 122807992}
+=======
+  PhoneSound: {fileID: 122807992}
+  Scene: {fileID: 807124142}
+>>>>>>> df39ae9 (Added Interaction Outlines)
 --- !u!1 &1303728209
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,7 +925,10 @@ MonoBehaviour:
   Portrait: {fileID: 0}
   Scene: intro
   soundfont: {fileID: 1303728212}
+<<<<<<< HEAD
   cutscene: {fileID: 807124138}
+=======
+>>>>>>> df39ae9 (Added Interaction Outlines)
   PhoneUI: {fileID: 0}
   linecount: 0
 --- !u!4 &1303728211
@@ -1178,12 +1232,25 @@ MonoBehaviour:
     - '* Thank you. Good day...'
     - '* '
     - '[You hang up. It''s a phone call from work.]'
+<<<<<<< HEAD
     - '[They''re waiting for you. But you''d rather spend another day in solitude.]'
     - '[Company ]'
     - '[Smoking is not one of your habits.]'
     - '[In fact, yourself someone who rarely indulges in what''s called "unhealthy"
       habits.]'
     - '[Smoke]'
+=======
+    - '[They''re waiting for you. But you''d rather spend a weekend and a half alone.]'
+    - '[ On your little vacation you partake in improving your smoking skills. Just
+      so you''ll look more like a pro when you get back. ]'
+    - '[Smoking is not one of your habits.]'
+    - '[In fact, yourself someone who rarely indulges in what''s commonly referred
+      to as "unhealthy".]'
+    - '[Smoke gathers up on your apartment''s ceiling. It moves in a spiral before
+      fading into the air. ]'
+    - '[You should probably crack open a window.]'
+    - '[But that''d be no good.]'
+>>>>>>> df39ae9 (Added Interaction Outlines)
     - '[Perhaps it''s time to go out..]'
 --- !u!4 &1772873400
 Transform:

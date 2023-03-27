@@ -15,6 +15,10 @@ ScriptsOnlyBuild:
     - PhaseChange
     - PhaseControl
     - PhoneGame
+<<<<<<< HEAD
+=======
+    - QuickExit
+>>>>>>> df39ae9 (Added Interaction Outlines)
     - SimpleControl
     Cinemachine.dll:
     - Cinemachine.CinemachineBasicMultiChannelPerlin
@@ -29,8 +33,15 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+<<<<<<< HEAD
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+=======
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+>>>>>>> df39ae9 (Added Interaction Outlines)
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -71,8 +82,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+<<<<<<< HEAD
     - Class: 89
       Script: {instanceID: 0}
+=======
+>>>>>>> df39ae9 (Added Interaction Outlines)
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -86,6 +100,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1628}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 2022}
     - Class: 114
       Script: {instanceID: 2152}
@@ -107,6 +122,29 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4078}
     - Class: 114
       Script: {instanceID: 20404}
+=======
+      Script: {instanceID: 1954}
+    - Class: 114
+      Script: {instanceID: 2024}
+    - Class: 114
+      Script: {instanceID: 2154}
+    - Class: 114
+      Script: {instanceID: 2344}
+    - Class: 114
+      Script: {instanceID: 2468}
+    - Class: 114
+      Script: {instanceID: 2642}
+    - Class: 114
+      Script: {instanceID: 2694}
+    - Class: 114
+      Script: {instanceID: 2842}
+    - Class: 114
+      Script: {instanceID: 3140}
+    - Class: 114
+      Script: {instanceID: 3722}
+    - Class: 114
+      Script: {instanceID: 4080}
+>>>>>>> df39ae9 (Added Interaction Outlines)
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -115,6 +153,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+<<<<<<< HEAD
+=======
+    - Class: 213
+      Script: {instanceID: 0}
+>>>>>>> df39ae9 (Added Interaction Outlines)
     - Class: 222
       Script: {instanceID: 0}
     - Class: 223
@@ -152,6 +195,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+<<<<<<< HEAD
+=======
+    - Class: 89
+      Script: {instanceID: 0}
+>>>>>>> df39ae9 (Added Interaction Outlines)
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -169,6 +217,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1786}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 2022}
     - Class: 114
       Script: {instanceID: 2082}
@@ -226,6 +275,67 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4078}
     - Class: 114
       Script: {instanceID: 4368}
+=======
+      Script: {instanceID: 2024}
+    - Class: 114
+      Script: {instanceID: 2084}
+    - Class: 114
+      Script: {instanceID: 2154}
+    - Class: 114
+      Script: {instanceID: 2260}
+    - Class: 114
+      Script: {instanceID: 2306}
+    - Class: 114
+      Script: {instanceID: 2344}
+    - Class: 114
+      Script: {instanceID: 2356}
+    - Class: 114
+      Script: {instanceID: 2408}
+    - Class: 114
+      Script: {instanceID: 2458}
+    - Class: 114
+      Script: {instanceID: 2468}
+    - Class: 114
+      Script: {instanceID: 2502}
+    - Class: 114
+      Script: {instanceID: 2536}
+    - Class: 114
+      Script: {instanceID: 2642}
+    - Class: 114
+      Script: {instanceID: 2694}
+    - Class: 114
+      Script: {instanceID: 2842}
+    - Class: 114
+      Script: {instanceID: 2932}
+    - Class: 114
+      Script: {instanceID: 3028}
+    - Class: 114
+      Script: {instanceID: 3140}
+    - Class: 114
+      Script: {instanceID: 3306}
+    - Class: 114
+      Script: {instanceID: 3364}
+    - Class: 114
+      Script: {instanceID: 3428}
+    - Class: 114
+      Script: {instanceID: 3462}
+    - Class: 114
+      Script: {instanceID: 3632}
+    - Class: 114
+      Script: {instanceID: 3656}
+    - Class: 114
+      Script: {instanceID: 3722}
+    - Class: 114
+      Script: {instanceID: 3808}
+    - Class: 114
+      Script: {instanceID: 4030}
+    - Class: 114
+      Script: {instanceID: 4080}
+    - Class: 114
+      Script: {instanceID: 4370}
+    - Class: 114
+      Script: {instanceID: 156600}
+>>>>>>> df39ae9 (Added Interaction Outlines)
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -267,8 +377,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+<<<<<<< HEAD
     - Class: 89
       Script: {instanceID: 0}
+=======
+>>>>>>> df39ae9 (Added Interaction Outlines)
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -280,6 +393,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1488}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 2022}
     - Class: 114
       Script: {instanceID: 2342}
@@ -293,6 +407,21 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2930}
     - Class: 114
       Script: {instanceID: 4078}
+=======
+      Script: {instanceID: 2024}
+    - Class: 114
+      Script: {instanceID: 2344}
+    - Class: 114
+      Script: {instanceID: 2468}
+    - Class: 114
+      Script: {instanceID: 2642}
+    - Class: 114
+      Script: {instanceID: 2842}
+    - Class: 114
+      Script: {instanceID: 2932}
+    - Class: 114
+      Script: {instanceID: 4080}
+>>>>>>> df39ae9 (Added Interaction Outlines)
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -440,6 +569,15 @@ ScriptsOnlyBuild:
     className: CinemachineCollider
   - hash:
       serializedVersion: 2
+<<<<<<< HEAD
+=======
+      Hash: 65ef9db836da6a06a3f54ba94e7949e1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IntroControl
+  - hash:
+      serializedVersion: 2
+>>>>>>> df39ae9 (Added Interaction Outlines)
       Hash: 15882a52798c275361cd0a3ada984ec5
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -938,7 +1076,11 @@ ScriptsOnlyBuild:
     className: CinemachineGroupComposer
   - hash:
       serializedVersion: 2
+<<<<<<< HEAD
       Hash: 116c478fa826fc4128c601113e686718
+=======
+      Hash: 8304cbb255674d5570e55d035b3cefca
+>>>>>>> df39ae9 (Added Interaction Outlines)
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DialogueManager
@@ -1142,13 +1284,24 @@ ScriptsOnlyBuild:
     className: CinemachineBlendListCamera
   - hash:
       serializedVersion: 2
+<<<<<<< HEAD
       Hash: a7be0d919bd03ade091f14011941aca6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IntroControl
+=======
+      Hash: ff52016b253cc35dfd6af15773202a0a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: QuickExit
+>>>>>>> df39ae9 (Added Interaction Outlines)
   platform: 19
   scenePathNames:
   - Assets/Scenes/TitleScreen.unity
   - Assets/Scenes/Intro.unity
   - Assets/Scenes/Sample.unity
+<<<<<<< HEAD
   playerPath: C:/Users/Adel Zhanabay/Documents/YesAnd_UnityDEMO_V1/YESAND.exe
+=======
+  playerPath: C:/Users/Adel Zhanabay/Documents/YesAND_Demo_V2/YESAND.exe
+>>>>>>> df39ae9 (Added Interaction Outlines)

@@ -2091,7 +2091,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1221859141}
+<<<<<<< HEAD
   m_Enabled: 1
+=======
+  m_Enabled: 0
+>>>>>>> df39ae9 (Added Interaction Outlines)
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41ea1f7ea505beb42a2138e69ea2371d, type: 3}
   m_Name: 
@@ -2101,6 +2105,10 @@ MonoBehaviour:
   keynumber: 123456
   trigger1: {fileID: 0}
   trigger2: {fileID: 0}
+<<<<<<< HEAD
+=======
+  ring: {fileID: 0}
+>>>>>>> df39ae9 (Added Interaction Outlines)
   Hint: {fileID: 0}
   PhoneRing: {fileID: 0}
   RingAnimation: {fileID: 0}

@@ -13,6 +13,11 @@ public class CharacterControl : MonoBehaviour
     public Animator animator; 
     public Animator Danimator;
     public AudioSource Step;
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> df39ae9 (Added Interaction Outlines)
     private DialogueTrigger currentFocus;
     
    
@@ -49,7 +54,20 @@ public class CharacterControl : MonoBehaviour
 
         }
        
+<<<<<<< HEAD
         animator.SetFloat("Speed", walkingspeed);
+=======
+        if (horizontal != 0 || vertical != 0){
+
+            animator.SetFloat("Speed", 1);
+
+        }
+        else
+        {
+            animator.SetFloat("Speed", 0);
+        }
+        
+>>>>>>> df39ae9 (Added Interaction Outlines)
        
     
         
@@ -110,6 +128,16 @@ public class CharacterControl : MonoBehaviour
         triggeron2.SetActive(true);
         currentFocus = other.GetComponent<DialogueTrigger>();
 
+<<<<<<< HEAD
+=======
+        if ( other.isTrigger == true)
+        {
+            other.GetComponent<Outline>().enabled = true;
+        }
+        
+
+
+>>>>>>> df39ae9 (Added Interaction Outlines)
         
     }
 
@@ -119,6 +147,14 @@ public class CharacterControl : MonoBehaviour
         triggeron2.SetActive(false);
         currentFocus = null;
 
+<<<<<<< HEAD
+=======
+        if ( other.isTrigger == true)
+        {
+            other.GetComponent<Outline>().enabled = false;
+        }
+
+>>>>>>> df39ae9 (Added Interaction Outlines)
     }
 
 }
