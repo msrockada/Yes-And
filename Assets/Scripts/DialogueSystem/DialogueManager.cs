@@ -13,10 +13,7 @@ public class DialogueManager : MonoBehaviour
     public Animator Portrait;
     public string Scene;
     public AudioSource soundfont;
-<<<<<<< HEAD
     public GameObject cutscene;
-=======
->>>>>>> df39ae9 (Added Interaction Outlines)
     public GameObject PhoneUI;
     
     
@@ -55,7 +52,6 @@ public class DialogueManager : MonoBehaviour
             Portrait.SetInteger("Emotion",animationnumber);
         }
         
-<<<<<<< HEAD
         if (Scene == "intro")
         {
             if(linecount == cutnumber)
@@ -63,8 +59,6 @@ public class DialogueManager : MonoBehaviour
                 cutscene.SetActive(true);
             }
         }
-=======
->>>>>>> df39ae9 (Added Interaction Outlines)
 
     }
 
